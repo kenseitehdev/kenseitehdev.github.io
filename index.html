@@ -2,152 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sujay Kumar – Backend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sujay Kumar | Backend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
+      color: #212529;
       line-height: 1.6;
-      color: #2c2c2c;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 2rem;
     }
-
+    header {
+      background: #343a40;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 2rem;
     }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.2rem;
+    .section {
+      margin-bottom: 3rem;
     }
-
     h2 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.3rem;
-      margin-top: 2rem;
-      font-size: 1.3rem;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 0.5rem;
     }
-
-    .title {
-      color: #555;
+    .project-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+    .skill {
+      background: white;
+      padding: 0.75rem;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .contact {
+      text-align: center;
       font-size: 1.1rem;
-      margin-bottom: 1rem;
     }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin-bottom: 0.4rem;
-    }
-
-    .project {
-      margin-bottom: 1rem;
-    }
-
-    .job {
-      margin-bottom: 1rem;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #0073e6;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
     .footer {
-      margin-top: 2rem;
+      text-align: center;
+      color: #868e96;
       font-size: 0.9rem;
-      color: #aaa;
+      margin: 2rem 0;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Sujay Kumar</h1>
-    <div class="title">Backend Developer | Python Enthusiast | Problem Solver</div>
+    <p>Backend Developer • Python Enthusiast • Problem Solver</p>
+  </header>
 
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm Sujay Kumar, a backend developer with a passion for coding, problem-solving,
-      and building impactful software. I specialize in Python, Java, and C, and I thrive in
-      dynamic environments where I can continue to grow and tackle challenging problems.
-    </p>
+  <main class="container">
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Blazibot</h3>
+        <p>A Pokémon-themed Discord bot with gameplay, battling, and breeding. Built with Python and the Discord API.</p>
+        <p><a href="#">View on GitHub</a></p>
+      </div>
+      <div class="project-card">
+        <h3>MokshaJS</h3>
+        <p>Minimal JavaScript library for building dynamic UIs with modularity.</p>
+        <p><a href="#">View on GitHub</a></p>
+      </div>
+      <div class="project-card">
+        <h3>Least</h3>
+        <p>A modern replacement for `less`, featuring syntax highlighting and buffer navigation.</p>
+        <p><a href="#">View on GitHub</a></p>
+      </div>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>Java</li>
-      <li>JavaScript (ReactJS, VueJS)</li>
-      <li>SQL, NoSQL</li>
-      <li>Docker</li>
-      <li>RESTful APIs</li>
-      <li>Agile Methodologies</li>
-      <li>CI/CD</li>
-    </ul>
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">ReactJS</div>
+        <div class="skill">VueJS</div>
+        <div class="skill">SQL / NoSQL</div>
+        <div class="skill">Docker</div>
+        <div class="skill">REST APIs</div>
+        <div class="skill">CI/CD</div>
+      </div>
+    </section>
 
-    <h2>Projects</h2>
-    <div class="project">
-      <strong>Blazibot</strong><br />
-      A Pokémon-themed Discord bot featuring interactive gameplay mechanics, battling, and breeding. Built with Python and the Discord API. <br />
-      <a href="#">GitHub</a>
-    </div>
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="project-card">
+        <h3>Skyhook – Backend Developer</h3>
+        <p>July 2020 - Sep 2022</p>
+        <ul>
+          <li>Built ERP/CRM systems for business automation.</li>
+          <li>Architected major platforms and led deployment efforts.</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h3>Image Microsystems – Computer Technician II</h3>
+        <p>Jan 2018 - May 2019</p>
+        <ul>
+          <li>Performed diagnostics and repair of laptops, printers, and networks.</li>
+          <li>Documented hardware issues and resolved them efficiently.</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="project">
-      <strong>MokshaJS</strong><br />
-      A lightweight JavaScript library for creating dynamic web apps with minimal overhead.<br />
-      <a href="#">GitHub</a>
-    </div>
+    <section class="section contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sujay_kumar1@outlook.com">sujay_kumar1@outlook.com</a></p>
+      <p>Phone: (737) 237-3770</p>
+      <p><a href="#">LinkedIn</a> • <a href="#">GitHub</a></p>
+    </section>
+  </main>
 
-    <div class="project">
-      <strong>Least</strong><br />
-      A drop-in replacement for <code>less</code> with syntax highlighting, multi-buffer support, and search capabilities.<br />
-      <a href="#">GitHub</a>
-    </div>
-
-    <h2>Professional Experience</h2>
-    <div class="job">
-      <strong>Skyhook</strong> – Backend Developer<br />
-      <em>July 2020 - September 2022</em>
-      <ul>
-        <li>Designed and implemented ERP and CRM systems to optimize business processes.</li>
-        <li>Led the architecture of two major platforms and oversaw system administration tasks.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <strong>Image Microsystems</strong> – Computer Technician II<br />
-      <em>January 2018 - May 2019</em>
-      <ul>
-        <li>Conducted hardware diagnostics and troubleshooting for laptops, printers, and network switches.</li>
-        <li>Provided efficient documentation and reporting on technical issues.</li>
-      </ul>
-    </div>
-
-    <h2>Contact</h2>
-    <div class="contact">
-      <a href="mailto:sujay_kumar1@outlook.com">Email</a>
-      <a href="tel:+17372373770">Phone</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-    </div>
-
-    <div class="footer">
-      © 2025 Sujay Kumar. All rights reserved.
-    </div>
-  </div>
+  <footer class="footer">
+    © 2025 Sujay Kumar. All rights reserved.
+  </footer>
 </body>
 </html>
